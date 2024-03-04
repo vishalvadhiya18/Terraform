@@ -5,7 +5,7 @@ resource "aws_vpc" "my_vpc" {
   enable_dns_hostnames = true
 
 tags = {
-    Name = "myVPC"
+    Name = "Terraformvpc"
     }
 }
 
@@ -21,7 +21,7 @@ resource "aws_subnet" "public_subnet" {
   cidr_block        = var.public_subnet_cidr_block  
   availability_zone = "ap-south-1a"  
   tags = {
-    Name = "Public_sub"
+    Name = "public_subnet"
   }
 }
 
@@ -30,7 +30,7 @@ resource "aws_subnet" "private_subnet_ec2" {
   cidr_block        = var.private_subnet_ec2_cidr_block  
   availability_zone = "ap-south-1b"  
   tags = {
-    Name = "EC2_subnet"
+    Name = "private_ec2_subnet"
   }
 }
 
@@ -39,7 +39,7 @@ resource "aws_subnet" "private_subnet_rds" {
   cidr_block        = var.private_subnet_rds_cidr_block  
   availability_zone = "ap-south-1c"
   tags = {
-    Name = "RDS_subnet"
+    Name = "private_rds_subnet"
   }
 }
 
@@ -53,7 +53,7 @@ resource "aws_route_table" "public_route_table" {
   }
 
   tags = {
-    Name = "Public_rt"
+    Name = "Public_route_table"
   }
 }
 
@@ -79,7 +79,7 @@ resource "aws_eip" "my_eip" {
 resource "aws_route_table" "private_subnet_ec2_route_table" {
   vpc_id = aws_vpc.my_vpc.id
   tags = {
-    Name = "private_EC2_rt"
+    Name = "private_subnet_ec2_route_table"
   }
 }
 
