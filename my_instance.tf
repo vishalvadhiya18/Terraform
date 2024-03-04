@@ -5,7 +5,7 @@ resource "aws_instance" "ec2_instance" {
     associate_public_ip_address = true
     security_groups = [aws_security_group.ec2_security_group.id]
 tags = {
-    Name = "server"
+    Name = "web_server"
   }
 }
 
