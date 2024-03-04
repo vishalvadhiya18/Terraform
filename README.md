@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>🚀 Infrastructure as Code for AWS VPC Setup 🌐</h1>
+  <h1> Infrastructure as Code for AWS VPC Setup </h1>
   <p>This repository contains Terraform scripts for provisioning a basic infrastructure setup on Amazon Web Services (AWS). The infrastructure includes a Virtual Private Cloud (VPC) with public and private subnets, an Internet Gateway, NAT Gateway, EC2 instance, and a MySQL RDS instance. The setup is designed to be a starting point for deploying scalable and secure applications on AWS.</p>
   <h2>Features</h2>
   <ul>
